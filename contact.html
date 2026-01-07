@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Bilal Abrar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> Bilal Abrar</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card card-pad">
+        <div class="kicker">Contact</div>
+        <h1 style="margin-bottom:10px;">Let’s connect</h1>
+        <p class="lead">
+          The easiest way to reach me is by email. You can also add your GitHub/LinkedIn links here later.
+        </p>
+
+        <div class="grid-2">
+          <div class="card item">
+            <h3>Email</h3>
+            <p>
+              <a class="btn primary" href="mailto:yourname@email.com">yourname@email.com</a>
+            </p>
+            <p class="small">Replace with your real email.</p>
+          </div>
+
+          <div class="card item">
+            <h3>Message (optional)</h3>
+            <p class="small">This form uses your email app (no backend needed).</p>
+            <form class="form" action="mailto:yourname@email.com" method="post" enctype="text/plain">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div>
+                <label for="msg">Message</label>
+                <textarea id="msg" name="message" placeholder="Write your message..." required></textarea>
+              </div>
+              <button class="btn primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+        <p class="small">
+          If you want a real contact form (without opening mail), tell me and I’ll wire it to Formspree/Netlify Forms.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container row">
+      <div>© <span id="y"></span> Bilal Abrar</div>
+      <div>
+        <a href="index.html">Home</a> ·
+        <a href="about.html">About</a> ·
+        <a href="projects.html">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
